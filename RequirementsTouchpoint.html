@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Requirements Touchpoint</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style type="text/css">
+        body {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+        }
+
+        input,
+        textarea {
+            margin-left: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <main>
+        <div class="container">
+            <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+                <a href="/"
+                    class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+                    <svg class="bi me-2" width="40" height="32">
+                        <use xlink:href="#bootstrap"></use>
+                    </svg>
+                    <span class="fs-4">Requirements Touchpoint</span>
+                </a>
+                <ul class="nav nav-pills">
+                    <li class="nav-item"><a href="#responsibilities" class="nav-link">Responsibilities</a></li>
+                    <li class="nav-item"><a href="#scope" class="nav-link">Scope</a></li>
+                    <li class="nav-item"><a href="#test-coverage" class="nav-link">Test Coverage</a></li>
+                    <li class="nav-item"><a href="#documentation" class="nav-link">Documentation</a></li>
+                </ul>
+            </header>
+
+            <div class="row align-items-top g-lg-5 py-5">
+                <div class="col-lg-7 text-center text-lg-start">
+                    <h1 class="display-4 lh-1 text-body-emphasis mb-3">What it IS and
+                        ISN'T...
+                    </h1>
+                    <ul>
+                        <li><span><strong>It IS...</strong> A continuation of refinement to nail down the scope
+                                completely prior to
+                                coding or test planning</span></li>
+                        <li><span><strong>It ISN'T...</strong> A demo of the dev work that has already been
+                                completed</span></li>
+                        <li><span><strong>It IS...</strong> At the start of work on a story</span></li>
+                        <li><span><strong>It's ISN'T...</strong> After the dev work has already been completed</span>
+                        </li>
+                        <li><span><strong>It IS...</strong> Needed again after diving deeper and discover
+                                additions</span></li>
+                        <li><span><strong>It IS...</strong> A meeting for the entire team</span></li>
+                        <li><span><strong>It IS...</strong> A discussion of work impact on other Boards (i.e. not just
+                                relying on the PO)</span></li>
+                    </ul>
+                </div>
+                <div class="col-md-10 mx-auto col-lg-5">
+                    <h2>Consider the following:</h2>
+                    <div class="list-group">
+                        <div class="list-group-item list-group-item-action d-flex gap-3 py-3">
+                            <div class="d-flex gap-2 w-100 justify-content-between">
+                                <div>
+                                    <h6 class="mb-0">The team may not need a touchpoint for a simple resource change
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-group-item list-group-item-action d-flex gap-3 py-3">
+                            <div class="input-group">
+                                <span class="input-group-text">What did you discover?</span>
+                                <textarea class="form-control" aria-label="What did you discover?"></textarea>
+                            </div>
+                        </div>
+                        <div class="list-group-item list-group-item-action d-flex gap-3 py-3">
+                            <div class="input-group">
+                                <span class="input-group-text">What changed?</span>
+                                <textarea class="form-control" aria-label="What changed?"></textarea>
+                            </div>
+                        </div>
+                        <div class="list-group-item list-group-item-action d-flex gap-3 py-3">
+                            <div class="input-group">
+                                <span class="input-group-text">Are there new settings <br /> or resources?</span>
+                                <textarea class="form-control"
+                                    aria-label="Are there new settings or resources?"></textarea>
+                            </div>
+                        </div>
+                        <div class="list-group-item list-group-item-action d-flex gap-3 py-3">
+                            <div class="input-group">
+                                <span class="input-group-text">Are documentation <br /> updates needed?</span>
+                                <textarea class="form-control"
+                                    aria-label="Are documentation updates needed?"></textarea>
+                            </div>
+                        </div>
+                        <div class="list-group-item list-group-item-action d-flex gap-3 py-3">
+                            <div class="input-group">
+                                <span class="input-group-text">Is the work part <br /> of a larger feature?</span>
+                                <textarea class="form-control"
+                                    aria-label="Is the work part of a larger feature?"></textarea>
+                            </div>
+                        </div>
+                        <div class="list-group-item list-group-item-action d-flex gap-3 py-3">
+                            <div class="input-group">
+                                <span class="input-group-text">Potential impact on <br /> other teams?</span>
+                                <textarea class="form-control"
+                                    aria-label="Potential impact for other teams?"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr />
+
+            <div id="responsibilities" class="d-flex flex-column flex-md-row p-4 gap-4 py-md-5 justify-content-center">
+                <div class="list-group">
+                    <h1>Team Member Responsibility &amp; Preparation</h1>
+                    <label class="list-group-item d-flex gap-2">
+                        <input class="form-check-input flex-shrink-0" type="checkbox" value="">
+                        <span>Developer should schedule the meeting</span>
+                    </label>
+                    <label class="list-group-item d-flex gap-2">
+                        <input class="form-check-input flex-shrink-0" type="checkbox" value="">
+                        <span>Entire team should be invited</span>
+                    </label>
+                    <label class="list-group-item d-flex gap-2">
+                        <input class="form-check-input flex-shrink-0" type="checkbox" value="">
+                        <span>Developer should be prepared to discuss Unit Test coverage</span>
+                    </label>
+                    <label class="list-group-item d-flex gap-2">
+                        <input class="form-check-input flex-shrink-0" type="checkbox" value="">
+                        <span>Developer should be prepared to discuss changes in scope or additional discovery</span>
+                    </label>
+                    <label class="list-group-item d-flex gap-2">
+                        <input class="form-check-input flex-shrink-0" type="checkbox" value="">
+                        <span>SDET/Developers should be prepared to discuss Coded UI coverage</span>
+                    </label>
+                    <label class="list-group-item d-flex gap-2">
+                        <input class="form-check-input flex-shrink-0" type="checkbox" value="">
+                        <span>SDET/Developers should determine if existing tests can be leveraged or if new tests are
+                            needed</span>
+                    </label>
+                    <label class="list-group-item d-flex gap-2">
+                        <input class="form-check-input flex-shrink-0" type="checkbox" value="">
+                        <span>SDET/Developers should determine if there are limitations with Coded UI coverage</span>
+                    </label>
+                    <label class="list-group-item d-flex gap-2">
+                        <input class="form-check-input flex-shrink-0" type="checkbox" value="">
+                        <span>QA should be prepared to ask questions about Manual test coverage</span>
+                    </label>
+                    <label class="list-group-item d-flex gap-2">
+                        <input class="form-check-input flex-shrink-0" type="checkbox" value="">
+                        <span>QA should identify test participants in advance of meeting</span>
+                    </label>
+                    <label class="list-group-item d-flex gap-2">
+                        <input class="form-check-input flex-shrink-0" type="checkbox" value="">
+                        <span>QA should perform exploratory testing & have an understanding of worked required</span>
+                    </label>
+                    <label class="list-group-item d-flex gap-2">
+                        <input class="form-check-input flex-shrink-0" type="checkbox" value="">
+                        <span>Tech Writer should be prepared to ask questions about what needs to be captured in a
+                            release note or documentation</span>
+                    </label>
+                    <label class="list-group-item d-flex gap-2">
+                        <input class="form-check-input flex-shrink-0" type="checkbox" value="">
+                        <span>Tech Writer should identify existing documentation which may need to be updated</span>
+                    </label>
+                    <label class="list-group-item d-flex gap-2">
+                        <input class="form-check-input flex-shrink-0" type="checkbox" value="">
+                        <span>BA should be prepared to ask probing questions about what is changing and where it is
+                            changing</span>
+                    </label>
+                    <label class="list-group-item d-flex gap-2">
+                        <input class="form-check-input flex-shrink-0" type="checkbox" value="">
+                        <span>BA should be prepared with a good understanding of the work required</span>
+                    </label>
+                    <label class="list-group-item d-flex gap-2">
+                        <input class="form-check-input flex-shrink-0" type="checkbox" value="">
+                        <span>PO should be prepared to answer questions about the business value of the story</span>
+                    </label>
+                    <label class="list-group-item d-flex gap-2">
+                        <input class="form-check-input flex-shrink-0" type="checkbox" value="">
+                        <span>PO should be prepared for anything!</span>
+                    </label>
+                    <label class="list-group-item d-flex gap-2">
+                        <input class="form-check-input flex-shrink-0" type="checkbox" value="">
+                        <span>UX should be prepared to share mockups</span>
+                    </label>
+                    <label class="list-group-item d-flex gap-2">
+                        <input class="form-check-input flex-shrink-0" type="checkbox" value="">
+                        <span>UX should perform exploratory testing to identify other areas of the system that may be
+                            affected</span>
+                    </label>
+                    <label class="list-group-item d-flex gap-2">
+                        <input class="form-check-input flex-shrink-0" type="checkbox" value="">
+                        <span>Scrum Master should be prepared to guide the team through changes to process</span>
+                    </label>
+                </div>
+                <div class="mx-auto col-lg-5">
+                    <h2>Consider the following:</h2>
+                    <div class="list-group">
+                        <div class="list-group-item list-group-item-action d-flex gap-3 py-3">
+                            <div class="input-group">
+                                <span class="input-group-text">Who should do what?</span>
+                                <textarea class="form-control" aria-label="Who should do what?"></textarea>
+                            </div>
+                        </div>
+                        <div class="list-group-item list-group-item-action d-flex gap-3 py-3">
+                            <div class="input-group">
+                                <span class="input-group-text">What information should <br /> each team member <br />
+                                    bring to the meeting?</span>
+                                <textarea class="form-control"
+                                    aria-label="What information should each team member bring to the meeting?"></textarea>
+                            </div>
+                        </div>
+                        <div class="list-group-item list-group-item-action d-flex gap-3 py-3">
+                            <div class="input-group">
+                                <span class="input-group-text">What information does <br /> each member of the team
+                                    <br /> need from the meeting?</span>
+                                <textarea class="form-control"
+                                    aria-label="What information does each member of the team need from the meeting?"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr />
+
+            <div id="scope" class="row align-items-top g-lg-5 py-5">
+                <div class="col-md-12 mx-auto col-lg-6">
+                    <h1>Define Scope Completely</h1>
+                    <div class="list-group">
+                        <div class="list-group-item list-group-item-action d-flex gap-3 py-3">
+                            <div class="input-group">
+                                <span class="input-group-text">Discuss dependencies <br /> or potential gotchas</span>
+                                <textarea class="form-control"
+                                    aria-label="Discuss dependencies or potential gotchas"></textarea>
+                            </div>
+                        </div>
+                        <div class="list-group-item list-group-item-action d-flex gap-3 py-3">
+                            <div class="input-group">
+                                <span class="input-group-text">Bring up concerns <br /> about scope creep</span>
+                                <textarea class="form-control"
+                                    aria-label="Bring up concerns about scope creep"></textarea>
+                            </div>
+                        </div>
+                        <div class="list-group-item list-group-item-action d-flex gap-3 py-3">
+                            <div class="input-group">
+                                <span class="input-group-text">Are resources, settings, <br /> or feature flags
+                                    changing?</span>
+                                <textarea class="form-control"
+                                    aria-label="Are resources, settings, or feature flags changing?"></textarea>
+                            </div>
+                        </div>
+                        <div class="list-group-item list-group-item-action d-flex gap-3 py-3">
+                            <div class="input-group">
+                                <span class="input-group-text">What are we touching or <br /> which parts of the <br />
+                                    system are affected?</span>
+                                <textarea class="form-control"
+                                    aria-label="What are we touching or which parts of the system are affected?"></textarea>
+                            </div>
+                        </div>
+                        <div class="list-group-item list-group-item-action d-flex gap-3 py-3">
+                            <div class="input-group">
+                                <span class="input-group-text">Are there changes <br /> to shared code?</span>
+                                <textarea class="form-control"
+                                    aria-label="Are there changes to shared code?"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 mx-auto col-lg-6">
+                    <h2>Consider the following:</h2>
+                    <div class="list-group">
+                        <label class="list-group-item d-flex gap-2">
+                            <input class="form-check-input flex-shrink-0" type="checkbox" value="">
+                            <span>Once a dev has gotten into the code of the story, they should have
+                                a better understanding of the scope</span>
+                        </label>
+                        <label class="list-group-item d-flex gap-2">
+                            <input class="form-check-input flex-shrink-0" type="checkbox" value="">
+                            <span>The Requirements Touchpoint is a good time to determine which of the standard tasks
+                                may not be needed. (e.g. do we need a UX review if visual elements were not
+                                changed?)</span>
+                        </label>
+                        <div class="list-group-item list-group-item-action d-flex gap-3 py-3">
+                            <div class="input-group">
+                                <span class="input-group-text">Do we need unit tests <br /> (e.g. Virtual Guide
+                                    does <br />not need
+                                    unit tests or <br /> historically has not had <br /> unit tests created)?</span>
+                                <textarea class="form-control" aria-label="Do we need unit tests?"></textarea>
+                            </div>
+                        </div>
+                        <div class="list-group-item list-group-item-action d-flex gap-3 py-3">
+                            <div class="input-group">
+                                <span class="input-group-text">What types of changes <br />
+                                    will there be
+                                    (e.g. <br /> BenefitConnect,
+                                    Client, <br />Core, etc.)?</span>
+                                <textarea class="form-control"
+                                    aria-label="What types of changes will there be?"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr />
+
+            <div id="test-coverage" class="row align-items-top g-lg-5 pt-5 pb-3">
+                <div class="col-md-12 mx-auto col-lg-6">
+                    <h1>Test Coverage</h1>
+                    <div class="list-group">
+                        <div class="list-group-item list-group-item-action d-flex gap-3 py-3">
+                            <div class="d-flex gap-2 w-100 justify-content-between">
+                                <div>
+                                    <h6 class="mb-0">Unit tests are not a substitute for other types of testing
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-group-item list-group-item-action d-flex gap-3 py-3">
+                            <div class="input-group">
+                                <span class="input-group-text">Determine primary test <br /> scenarios which need to
+                                    <br /> be covered</span>
+                                <textarea class="form-control"
+                                    aria-label="Determine primary test scenarios which need to be covered"></textarea>
+                            </div>
+                        </div>
+                        <div class="list-group-item list-group-item-action d-flex gap-3 py-3">
+                            <div class="input-group">
+                                <span class="input-group-text">Discuss what can be <br /> covered with Coded UI <br />
+                                    vs manual tests</span>
+                                <textarea class="form-control"
+                                    aria-label="Discuss what can be covered with Coded UI vs manual tests"></textarea>
+                            </div>
+                        </div>
+                        <div class="list-group-item list-group-item-action d-flex gap-3 py-3">
+                            <div class="input-group">
+                                <span class="input-group-text">
+                                    If there are any areas <br />
+                                    that are impacted, they <br />
+                                    all need to be identified
+                                </span>
+                                <textarea class="form-control"
+                                    aria-label="If there are any areas that are impacted, they all need to be identified"></textarea>
+                            </div>
+                        </div>
+                        <div class="list-group-item list-group-item-action d-flex gap-3 py-3">
+                            <div class="input-group">
+                                <span class="input-group-text">
+                                    Team members should <br />
+                                    determine if existing <br />
+                                    tests can be leveraged, <br />
+                                    if new tests are <br />
+                                    needed, and identify <br />
+                                    limitations</span>
+                                <textarea class="form-control"
+                                    aria-label="Team members should determine if existing tests can be leveraged, if new tests are needed, and identify limitations"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 mx-auto col-lg-6">
+                    <h2>Consider the following:</h2>
+                    <div class="list-group">
+                        <label class="list-group-item d-flex gap-2">
+                            <input class="form-check-input flex-shrink-0" type="checkbox" value="">
+                            <span>Share what we do for unit tests?</span>
+                        </label>
+                        <label class="list-group-item d-flex gap-2">
+                            <input class="form-check-input flex-shrink-0" type="checkbox" value="">
+                            <span>What needs to be covered and by which type of tests?</span>
+                        </label>
+                        <label class="list-group-item d-flex gap-2">
+                            <input class="form-check-input flex-shrink-0" type="checkbox" value="">
+                            <span>Complicated test person setup scenario? e.g. Need someone who is retired and not
+                                eligible for anything? Need someone with a mid-year event? Need someone with unverified
+                                dependents? Where to get those people? How to set them up? Sometimes devs may know what
+                                is needed. Sometimes devs need input from BAs/QAs to determine what type of user is
+                                needed to verify functionality</span>
+                        </label>
+                        <label class="list-group-item d-flex gap-2">
+                            <input class="form-check-input flex-shrink-0" type="checkbox" value="">
+                            <span>Complicated system setup - Will testing be possible in stage or may additional setup
+                                be needed?</span>
+                        </label>
+                        <label class="list-group-item d-flex gap-2">
+                            <input class="form-check-input flex-shrink-0" type="checkbox" value="">
+                            <span>Coded UI cannot run against Stage - Team members must know how to update
+                                settings/resources to validate code in stage.</span>
+                        </label>
+                        <label class="list-group-item d-flex gap-2">
+                            <input class="form-check-input flex-shrink-0" type="checkbox" value="">
+                            <span>What needs to be done to get the system into the right state for testing to be
+                                completed?</span>
+                        </label>
+                        <label class="list-group-item d-flex gap-2">
+                            <input class="form-check-input flex-shrink-0" type="checkbox" value="">
+                            <span>Is there dual environment testing? (ESS Next generally does not require dual
+                                environment testing)</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row align-items-top g-lg-5 py-3">
+                <div class="col-md-12 mx-auto col-lg-6">
+                    <h2>Coded UI Tests</h2>
+                    <div class="list-group">
+                        <label class="list-group-item d-flex gap-2">
+                            <input class="form-check-input flex-shrink-0" type="checkbox" value="">
+                            <span>Define what can be covered by coded UI tests. A team member should have looked to see
+                                what is already covered to determine what tests may need to be updated or what new tests
+                                may need to be created</span>
+                        </label>
+                        <label class="list-group-item d-flex gap-2">
+                            <input class="form-check-input flex-shrink-0" type="checkbox" value="">
+                            <span>SDETs/Developers should be able to identify existing tests and share that information
+                                during requirements touchpoint - SDET community can assist with identifying tests which
+                                are pertinent to the story</span>
+                        </label>
+                        <label class="list-group-item d-flex gap-2">
+                            <input class="form-check-input flex-shrink-0" type="checkbox" value="">
+                            <span>Determine if minimal or no manual testing will be required if coded UI tests cover the
+                                functionality</span>
+                        </label>
+                        <label class="list-group-item d-flex gap-2">
+                            <input class="form-check-input flex-shrink-0" type="checkbox" value="">
+                            <span>Determine if framework supports coded UI testing (ie most Pension testing can't be
+                                automated)</label>
+                        </label>
+                        <label class="list-group-item d-flex gap-2">
+                            <input class="form-check-input flex-shrink-0" type="checkbox" value="">
+                            <span>SDET/Developers should coordinate to determine if certain components can be covered by
+                                unit tests</span>
+                        </label>
+                        <label class="list-group-item d-flex gap-2">
+                            <input class="form-check-input flex-shrink-0" type="checkbox" value="">
+                            <span>SDET/Developers should create coded UI tests for functionality unit tests cannot
+                                cover</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="col-md-12 mx-auto col-lg-6">
+                    <h2>Unit Tests</h2>
+                    <div class="list-group">
+                        <label class="list-group-item d-flex gap-2">
+                            <input class="form-check-input flex-shrink-0" type="checkbox" value="">
+                            <span>Define what Unit tests cover</span>
+                        </label>
+                        <label class="list-group-item d-flex gap-2">
+                            <input class="form-check-input flex-shrink-0" type="checkbox" value="">
+                            <span>Used to test a message or a worker</span>
+                        </label>
+                        <label class="list-group-item d-flex gap-2">
+                            <input class="form-check-input flex-shrink-0" type="checkbox" value="">
+                            <span>Used to test an isolated component</span>
+                        </label>
+                        <label class="list-group-item d-flex gap-2">
+                            <input class="form-check-input flex-shrink-0" type="checkbox" value="">
+                            <span>Does not provide full end to end integrated testing</span>
+                        </label>
+                        <label class="list-group-item d-flex gap-2">
+                            <input class="form-check-input flex-shrink-0" type="checkbox" value="">
+                            <span>Unit tests will not verify the correct resources are in place</span>
+                        </label>
+                        <label class="list-group-item d-flex gap-2">
+                            <input class="form-check-input flex-shrink-0" type="checkbox" value="">
+                            <span>Unit tests will provide early warning if we're breaking something</span>
+                        </label>
+                        <label class="list-group-item d-flex gap-2">
+                            <input class="form-check-input flex-shrink-0" type="checkbox" value="">
+                            <span>Stories that involve ESS code and Core API usually need unit tests</span>
+                        </label>
+                        <label class="list-group-item d-flex gap-2">
+                            <input class="form-check-input flex-shrink-0" type="checkbox" value="">
+                            <span>If a story does not have any code changes, no unit tests are needed - Just resource
+                                updates or backend work (logic which lives in Client API)</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row align-items-top g-lg-5 py-3">
+                <div class="col-md-12 mx-auto col-lg-6">
+                    <h2>Manual Tests</h2>
+                    <div class="list-group">
+                        <label class="list-group-item d-flex gap-2">
+                            <input class="form-check-input flex-shrink-0" type="checkbox" value="">
+                            <span>Determine what must be tested manually after coverage of Coded UI tests and Unit tests
+                                is determined</span>
+                        </label>
+                        <label class="list-group-item d-flex gap-2">
+                            <input class="form-check-input flex-shrink-0" type="checkbox" value="">
+                            <span>Exploratory testing should be performed prior to requirements touchpoint</span>
+                        </label>
+                        <label class="list-group-item d-flex gap-2">
+                            <input class="form-check-input flex-shrink-0" type="checkbox" value="">
+                            <span>Consider mobile testing, viewport testing &amp; WCAG testing approaches</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="col-md-12 mx-auto col-lg-6">
+                    <h2>Regression Tests</h2>
+                    <div class="list-group">
+                        <label class="list-group-item d-flex gap-2">
+                            <input class="form-check-input flex-shrink-0" type="checkbox" value="">
+                            <span>Define what is left for regression testing after Coded UI tests, Unit tests & manual
+                                testing</span>
+                        </label>
+                        <label class="list-group-item d-flex gap-2">
+                            <input class="form-check-input flex-shrink-0" type="checkbox" value="">
+                            <span>Define necessary updates to the regression test suite</span>
+                        </label>
+                        <label class="list-group-item d-flex gap-2">
+                            <input class="form-check-input flex-shrink-0" type="checkbox" value="">
+                            <span>If shared code is touched, determine what that mean for regression testing</span>
+                        </label>
+                        <label class="list-group-item d-flex gap-2">
+                            <input class="form-check-input flex-shrink-0" type="checkbox" value="">
+                            <span>Determine how to define regression test description</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <hr />
+
+            <div id="documentation" class="row align-items-top g-lg-5 pt-5 pb-3">
+                <div class="col-md-12 mx-auto col-lg-6">
+                    <h1>Documentation</h1>
+                    <div class="list-group">
+                        <label class="list-group-item d-flex gap-2">
+                            <input class="form-check-input flex-shrink-0" type="checkbox" value="">
+                            <span>What needs to be documented (how should devs identify this?)</span>
+                        </label>
+                        <label class="list-group-item d-flex gap-2">
+                            <input class="form-check-input flex-shrink-0" type="checkbox" value="">
+                            <span>Identify documentation which may need to be updated</span>
+                        </label>
+                        <label class="list-group-item d-flex gap-2">
+                            <input class="form-check-input flex-shrink-0" type="checkbox" value="">
+                            <span>Tech writer should be made aware of technical specifications</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="col-md-12 mx-auto col-lg-6">
+                    <h2>Consider the following:</h2>
+                    <div class="list-group">
+                        <label class="list-group-item d-flex gap-2">
+                            <input class="form-check-input flex-shrink-0" type="checkbox" value="">
+                            <span>Is this part of a larger documentation effort for the feature?</span>
+                        </label>
+                        <label class="list-group-item d-flex gap-2">
+                            <input class="form-check-input flex-shrink-0" type="checkbox" value="">
+                            <span>Do we need a release note or is it a shared release note?</span>
+                        </label>
+                        <label class="list-group-item d-flex gap-2">
+                            <input class="form-check-input flex-shrink-0" type="checkbox" value="">
+                            <span>Changes to shared code MUST have a release note (and possibly documentation)</span>
+                        </label>
+                        <label class="list-group-item d-flex gap-2">
+                            <input class="form-check-input flex-shrink-0" type="checkbox" value="">
+                            <span>Which areas of the release note must be completed?</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer py-3 my-4 bg-body-tertiary">
+        <div class="container">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Top</a></li>
+                <li class="nav-item"><a href="#responsibilities"
+                        class="nav-link px-2 text-body-secondary">Responsibilities</a></li>
+                <li class="nav-item"><a href="#scope" class="nav-link px-2 text-body-secondary">Scope</a></li>
+                <li class="nav-item"><a href="#test-coverage" class="nav-link px-2 text-body-secondary">Test
+                        Coverage</a></li>
+                <li class="nav-item"><a href="#documentation"
+                        class="nav-link px-2 text-body-secondary">Documentation</a>
+                </li>
+            </ul>
+            <p class="text-center text-body-secondary">Compiled by Paul Pemberton</p>
+        </div>
+    </footer>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+</html>
